@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>添加用户权限</title>
+		<link rel="stylesheet" type="text/css" href="../../css/style.css"/>
+		<link rel="stylesheet" type="text/css" href="../../css/form.css"/>
+	</head>
+	<body>
+		<!-- 蓝色背景区域 -->
+		<div class="wrap">
+			<!-- 白色可用区域 -->
+			<div class="canuse">
+				<!------ 位置 ------>
+	            <p class="contentText local"><span>位置：用户管理 > 用户权限配置管理 > 添加用户权限</span></p>
+	            
+			    	<div class="article_list" style="width: 98.5%; margin: 0px auto;">
+			            <!------- 内容 ------->
+			            <div class="content content1">
+			                <!-- 用户列表内容区 -->
+			                <div class="con con_01">
+			                    <!-- 表单信息填写区 -->
+			                    <h4 class="sel_title"><img src="../../img/list/brand1.png" /><span>填写用户权限信息</span><span class="necessary">（带*号为必填项）</span></h4>
+			                    <div class="write_area">
+			                        <form id="addFrom" action="" method="post">
+			                            <table class="contentText" border="1" cellspacing="0" cellpadding="0" width="99%">
+			                                <tbody>
+			                                    <tr>
+			                                        <th>用户名：</th>
+			                                        <td>
+			                                        	<input id="" name="" type="text" value="小张" readonly="readonly"> 
+			                                        </td>
+			                                        <th>所属组织机构：</th>
+			                                        <td>
+			                                        	<input id="" name="" type="text" value="总装中心" readonly="readonly"> 
+			                                        </td>
+			                                        <th>公司邮箱：</th>
+			                                        <td>
+			                                        	<input type="email" name="" id="" value="15826435971@163.com" readonly="readonly" />
+			                                        </td>
+			                                    </tr>
+			                                    <tr>
+			                                        <th>入职日期：</th>
+			                                        <td ><input type="date" id="" name="" value="2018-01-25" readonly="readonly" /></td>
+			                                        <th>联系电话：</th>
+			                                        <td colspan="3">
+			                                        	<input id="" name="" class="overLine" type="tel" value="15826435971" readonly="readonly">
+			                                        </td>
+			                                    </tr>
+			                                    <tr>
+			                                        <th>选择用户组：</th>
+			                                        <td colspan="5" class="clear" style="position : relative;height: 50px;">
+			                                        	<div id="div1">
+															<span><input id="groupNames1" name="groupNames" class="input_checkBox" type="checkbox" checked="checked" value="车间主管/副主管"><label for="groupNames1">车间主任</label></span>
+															<span><input id="groupNames2" name="groupNames" class="input_checkBox" type="checkbox" value="工艺工程师"><label for="groupNames2">工艺师</label></span>
+															<span><input id="groupNames3" name="groupNames" class="input_checkBox" type="checkbox" value="车间库管员"><label for="groupNames3">车间库管员</label></span>
+															<span><input id="groupNames4" name="groupNames" class="input_checkBox" type="checkbox" value="车间调度员"><label for="groupNames4">车间调度员</label></span>
+															<span><input id="groupNames5" name="groupNames" class="input_checkBox" type="checkbox" value="物料配送员"><label for="groupNames5">物料配送员</label></span>
+															<span><input id="groupNames6" name="groupNames" class="input_checkBox" type="checkbox" value="系统管理员"><label for="groupNames6">系统管理员</label></span>
+															<span><input id="groupNames7" name="groupNames" class="input_checkBox" type="checkbox" value="安全保密员"><label for="groupNames7">安全保密员</label></span>
+															<span><input id="groupNames8" name="groupNames" class="input_checkBox" type="checkbox" value="安全审计员"><label for="groupNames8">安全审计员</label></span>
+															<span class="redColor">*</span>
+			                                        	</div> 
+			                                        </td>
+			                                    </tr>
+			                                </tbody>
+			                            </table>
+			                        </form>
+			                        <!-- 保存、重置按钮区 -->
+			                        <div align="center" class="btn_submit">
+			                            <a href="userPermissionList.html" class="bgd_blue_two img_hand contentText">确定</a>
+			                            <a href="userPermissionList.html" class="bgd_white_two img_hand"> 返回 </a>
+			                        </div>
+			                    </div>
+			                </div>
+			            </div>
+			        </div>
+				</div>
+	            
+			</div>
+			
+			<!-- 版尾  -->
+			<div class="ending">
+				Copyright© 2017-2018 西安磐基新能源科技有限公司
+			</div>
+		</div>
+	</body>
+	<script src="../../js/jquery-3.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		var h = document.documentElement.clientHeight;
+		$(".wrap").css("height", h);
+		
+		// 获取每行 td 的兄弟节点
+		$(".info_area td").hover(   
+			function () {      
+				$(this).parent().children().addClass("td_hover");   
+			},    
+			function () {      
+				$(this).parent().children().removeClass("td_hover");   
+			}
+		);
+		
+	</script>
+</html>

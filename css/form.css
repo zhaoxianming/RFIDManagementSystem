@@ -1,0 +1,425 @@
+/*----- 蓝色背景区域 -----*/
+.wrap{
+	background: rgb(230, 245, 255);
+	border: 1px solid transparent;
+	box-sizing: border-box;
+}
+
+/*----- 白色可用区域 -----*/
+.canuse{
+	overflow-y: auto;
+	background: white;
+	width: 99%;
+	height: 98%;
+	margin: 7px auto;
+	border-radius: 5px;
+	border: 1px solid transparent;
+	box-sizing: border-box;
+}
+/*------ 页面路径 -----*/
+.local{
+	height: 30px;
+	line-height: 30px;
+	text-indent: 0.5rem;
+	background: -webkit-linear-gradient(top, #f0f0f0, #dcdcdc);
+	background: -ms-linear-gradient(top, #f0f0f0 0%, #dcdcdc 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=#f0f0f0, endColorstr=#dcdcdc,GradientType=0 );
+	position: relative;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+.local span{
+	margin-left: 10px;
+}
+.article_list{
+	width: 100%;
+	/*float: left;*/
+	/*background: rgb(248, 248, 248);*/
+	margin-bottom: 20px;
+}
+/* ------- 导航栏 ------- */
+
+
+/*------ 内容区块  1 的内容 -----*/
+.content{
+	width: 100.9%;	
+	margin-left: -6px;		
+}
+
+/*----- 列表标题 -----*/
+.sel_title{
+	width: 100%;
+	margin: auto;
+	margin-top: 10px;
+	padding: 3px 0px;
+	/*background: rgb(238, 245, 252);*/
+	background: -webkit-linear-gradient(top, #e1ebfa, #f5f9ff);
+	background: -ms-linear-gradient(top, #e1ebfa 0%, #f5f9ff 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=#e1ebfa, endColorstr=#f5f9ff,GradientType=0 );
+	
+	border: 1px solid rgb(222, 235, 252);	
+	box-sizing: border-box;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+.sel_title span{
+	font-size: 15px;
+	position: relative;
+	top: 2px;
+}
+.sel_title span:nth-of-type(1){
+	font-weight: bolder;
+}
+/*.sel_title span:nth-of-type(2){
+	font-size: 10px;
+	color: rgb(250, 50, 50);
+}*/
+.necessary{
+	font-size: 10px !important;
+	color: rgb(250, 50, 50);
+}
+.sel_title img{
+	vertical-align: middle;
+	margin: auto 10px;
+}
+
+/*----- 表单填写区 -----*/
+.write_area{
+	border: 1px solid rgb(222, 235, 252);
+	border-top: none;
+	box-sizing: border-box;
+	background: white;
+	width: 100%;
+	margin: 0px auto;
+	padding-top: 20px;
+}
+.write_area table{
+	width: 99.5%;
+	margin: 0px auto;
+	border-collapse: collapse;
+	border: 1px solid rgb(220, 220, 220);
+}
+.write_area table tr th{
+	/*background: rgb(210, 229, 247);*/
+	border: 1px solid rgb(220, 220, 220);
+	width: 13.33%;
+	padding: 5px 10px;
+	text-align:right;
+	
+	background: -webkit-linear-gradient(top, #d2e5fa, #ebf5fa);
+	background: -ms-linear-gradient(top, #d2e5fa 0%, #ebf5fa 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=#d2e5fa, endColorstr=#ebf5fa,GradientType=0 );
+}
+.write_area table tr td{
+	width: 20%;
+	padding: 5px 10px;
+	border: 1px solid rgb(220, 220, 220);
+	text-align:left;
+}
+.write_area input, .write_area select, .write_area textarea{
+	background: rgb(249, 252, 255);
+	border: 1px solid rgb(222, 235, 252);	
+}
+.write_area .addRemind label{
+	width: 200px;
+	margin-left: 10px;
+}
+
+/*----- 选择所属用户组 -----*/
+#div1 span{
+	margin-right: 20px;
+}
+#div1 label{
+	position: relative;
+	top: 2px;
+	left: 1px;	
+}
+
+/*----- 表单按钮 -----*/
+.button_area{
+	text-align: center;
+}
+#button_id{
+	text-align: left;
+}
+.button_area input{
+	width: 70px;
+	margin: 15px 10px;
+}
+/*----- 列表区 -----*/
+.table_border{
+	width: 100%;
+	margin: 0px auto;
+	background: white;
+	border: 1px solid rgb(222, 235, 252);
+	border-top: none;
+	box-sizing: border-box;
+	border-radius: 5px;
+}
+
+.info_area{
+	width: 99.5%;	
+	margin: 0px auto;	
+	padding: 20px 0px;
+}
+.info_area img{
+	vertical-align: middle;
+}
+.info_area table{
+	width: 100%;
+	border: 1px solid rgb(220, 220, 220);
+}
+.info_area table tr th{
+	height: 30px;
+	padding: 5px 0px;
+	/*background: rgb(235, 245, 255);*/
+	text-align: center;
+	border: 1px solid rgb(220, 220, 220);
+}
+.info_area table tr td input {
+	width: 120px;
+}
+.info_area table tr td select {
+	width: 100px;
+}
+.list_head th{
+	height: 30px;
+	/*background: rgb(210, 229, 247) !important;*/
+	background: -webkit-linear-gradient(top, #d2e5fa, #ebf5fa);
+	background: -ms-linear-gradient(top, #d2e5fa 0%, #ebf5fa 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=#d2e5fa, endColorstr=#ebf5fa,GradientType=0 );
+}
+.list_headTd{
+	background: rgb(210, 229, 247) !important;
+}
+.info_area table tr td{
+	font-size: 11px;
+	padding: 5px 0px;
+	text-align: center !important;
+	border: 1px solid rgb(220, 220, 220);
+}
+.info_area .addRemind label{
+	width: 120px;
+}
+.info_area .setLeft label{
+	left:18px !important;
+}
+.info_area table tr:nth-of-type(2n+1){
+	background: rgb(245, 245, 245);
+}
+
+.td_hover{
+	background: rgb(255, 235, 210);
+	cursor: pointer;
+}
+
+/*----- 用户组描述 ----*/
+.textarea_describle{
+	width: 95%; 
+	height: 120px;
+}
+
+.btn_submit{
+	margin-top: 20px;
+}
+.btn_submit a:hover{
+	color: white;
+}
+
+/*------- 表单的背景颜色 ------*/
+.list_bgd{
+	background: rgb(245, 245, 245);
+}
+
+/*------- tab标签 -------*/
+.layui-tab{
+	width: 99.4%;
+	margin: 10px auto !important;
+}
+
+/*------- 用户组权限配置 -------*/
+.li-level2{
+	text-indent: 20px;
+	padding: 10px 0px;
+}
+.li-level2 .div1{
+	text-indent: 50px;
+}
+.li-level2 .div1 span{
+	padding: 10px 0px;
+	margin-right: 20px;	
+}
+
+/*--------- 批量处理 --------*/
+#batchOperate{
+	color: #515151;
+	float: right;
+	margin-right: 5px;
+}
+#batchOperate img{
+	vertical-align: middle;
+	margin-right: 2px;
+	margin-top: -1px;
+}
+
+/*----- 操作按钮 -----*/
+.title_operate{
+	position: relative;
+}
+.operate_area{
+	position: absolute;
+	top: 5px;
+	right: 10px;
+}
+.operate_area img{
+	vertical-align: middle;
+	margin-left: 10px;
+	padding: 5px 0px;
+}
+.operate_area span{
+	color: rgb(44, 11, 182);
+}
+.operate_area span:hover{
+	cursor: pointer;
+	color: white;
+}
+.operate_area a:hover{
+	color: white;
+}
+#addOperate a:hover{
+	color: blue;
+}
+#saveDetail:hover{
+	color: white !important;
+}
+
+/*-------- 表单中的二维码 -------*/
+.twocode img{
+	width: 50px;
+}
+
+#printTwocode:hover{
+	color: white !important;	
+}
+
+/*-------- 悬浮条形码 --------*/
+.barcode_hover{
+	width: 290px;
+	height: 66px;
+	background: white;
+	border: 1px solid rgb(100, 100, 100);
+	box-shadow: 1px 1px 2px rgb(150, 150, 150);
+	background: url(../img/list/barcode.png) no-repeat;
+	position: absolute;
+	left: 41%;
+}
+/*-------- 悬浮二维码 --------*/
+.twocode_hover{
+	width: 300px;
+	height: 300px;
+	background: white;
+	border: 1px solid rgb(100, 100, 100);
+	box-shadow: 1px 1px 2px rgb(150, 150, 150);
+	position: absolute;
+	left: 50%;
+	top:50%;
+	margin-top: -150px;
+	margin-left: -150px;
+}
+.twocode_hover img{
+	width: 100%;
+	height: 100%;
+}
+.th_twocode_hover{
+	width: 300px; 
+	height: 300px; 
+	background: white; 
+	border: 1px solid rgb(100, 100, 100); 
+	box-shadow: 1px 1px 2px rgb(150, 150, 150);
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	z-index: 100;
+	display: none;
+}
+.th_twocode_hover img{
+	width: 100%;
+	height: 100%;
+}
+.twocode:hover .th_twocode_hover{
+	display:block;
+}
+
+/*--------- 确定按钮 --------*/
+.certainBtn{
+	text-align: center;
+}
+.certainBtn a:hover{
+	color: white;
+}
+
+/*--------- 安全库存规则的input数字输入框 ---------*/
+.num_write{
+	width: 90px !important;
+}
+
+
+/*------------- 打印二维码弹框 ------------*/
+.mask{
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5);
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 900;
+}
+.printDiv{
+	width: 700px;
+	height: 500px;
+	border: 2px solid rgb(200, 200, 200);
+	background: white;
+	position: relative;
+	top: 50%;
+	left: 50%;
+	margin-top: -250px;
+	margin-left: -350px;
+}
+.printTitle{
+	width: 100%;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+	background: rgb(68, 161, 248);
+	color: white;
+}
+.printTitle img{
+	float: right;
+	margin-top: -15px;
+	margin-right: -15px;
+	cursor: pointer;
+}
+.twocodeDiv{
+	height: 430px;
+	overflow-y: auto;
+}
+.twocodeDiv:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.twocodeMoudle{
+	width: 100px;
+	padding: 10px 5px;
+	border: 1px solid rgb(230, 230, 230);
+	text-align: center;
+	float: left;
+	margin: 20px 12px;
+}
+.twocodeMoudle img{
+	width: 80px;
+	height: 80px;
+}
+.twocodeMoudle p{
+	font-size: 15px;
+}

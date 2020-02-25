@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>用户组权限列表</title>
+		<link rel="stylesheet" type="text/css" href="../../css/style.css"/>
+		<link rel="stylesheet" type="text/css" href="../../css/list.css"/>
+	</head>
+	<body>
+		<!-- 蓝色背景区域 -->
+		<div class="wrap">
+			<!-- 白色可用区域 -->
+			<div class="canuse">
+				<!------ 位置 ------>
+	            <p class="contentText local"><span>位置：用户管理 > 用户组权限管理列表</span></p>
+	            
+            	<!-- 搜索区 -->
+	            <div class="search_area">
+                    <h4 class="sel_title"><img src="../../img/list/brand1.png" /><span>用户组权限查询条件</span></h4>
+                    <div class="select_area">
+                        <div class="select_text clear">
+                        	<div class="label_input">
+	                            <label class="contentText">用户组名称：</label> <input type="text" name="" id="">
+                        	</div>
+                            <div class="floatLeft">
+	                            <button class="btn_search bgd_blue_search">查询</button>
+	                            <button class="btn_clear bgd_white_clear">重置</button>
+                            </div>
+                        </div>
+                    </div>
+	            </div>
+	            <!-- 列表区 -->
+	            <div class="show_list">
+                	<div class="title_operate">
+                    	<h4 class="sel_title"><img src="../../img/list/brand1.png" /><span>用户组权限列表</span></h4>
+                		
+                        <!-- 操作类型区 -->
+                        <div class="operate_area">
+                            <a href="usergroupAdd.html" class="bgd_add img_hand">增加</a> 
+                            <a onclick="delUserGroup();" class="bgd_delete img_hand">删除</a> 
+                        </div>
+                	</div>
+                	<div class="list_area">
+                        <!-- 信息列表区 -->
+                        <div class="info_area">
+                            <table class="tablelist" border="1" cellspacing="0" cellpadding="0" style="table-layout: fixed;">
+                                <tbody>
+                                    <tr class="menuText list_head">
+                                        <th class="checkSelectAll" style="width: 80px;"></th>
+                                        <th class="">用户组名称</th>
+                                        <th class="">用户组编码</th>
+                                        <th class="th_ellipsis">用户组权限</th>
+                                    </tr> 
+                                </tbody>
+                                <tbody class="tablelist tbody_hover">
+                                	<tr class="listTableText list_list">
+                                        <td><input type="checkbox" class="input_checkBox" name="" id="" value=""></td>
+                                        <td><a class="cursor" href="usergroupUpdate.html">车间主任</a></td>
+                                        <td>010008</td>
+                                        <td class="td_ellipsis" title="盘点表审核、单据查询、库存账龄查询、库存可用量查询、预警查询、出入库统计、库存物料统计、物料领用分析、待办事项、预警信息">盘点表审核、单据查询、库存账龄查询、库存可用量查询、预警查询、出入库统计、库存物料统计、物料领用分析、待办事项、预警信息</td>
+                                    </tr>
+                                    <tr class="listTableText list_list">
+                                        <td><input type="checkbox" class="input_checkBox" name="" id="" value=""></td>
+                                        <td><a class="cursor" href="">工艺师</a></td>
+                                        <td>010007</td>
+                                        <td class="td_ellipsis">待办事项、预警信息</td>
+                                    </tr>
+                                    <tr class="listTableText list_list">
+                                        <td><input type="checkbox" class="input_checkBox" name="" id="" value=""></td>
+                                        <td><a class="cursor" href="">车间库管员</a></td>
+                                        <td>010006</td>
+                                        <td class="td_ellipsis" title="物料信息管理、物料类型管理、供应商管理、计量单位管理、库位管理、仓库管理、型号工作令管理、物料出库规则、安全库存规则、物料盘点规则、物料需求申请管理、安全库存补料管理、物料入库、物料出库、盘点表管理、盘点差异调整、单据查询、库存账龄查询、库存可用量查询、预警查询、出入库统计、库存物料统计、物料领用分析、待办事项、预警信息">物料信息管理、物料类型管理、供应商管理、计量单位管理、库位管理、仓库管理、型号工作令管理、物料出库规则、安全库存规则、物料盘点规则、物料需求申请管理、安全库存补料管理、物料入库、物料出库、盘点表管理、盘点差异调整、单据查询、库存账龄查询、库存可用量查询、预警查询、出入库统计、库存物料统计、物料领用分析、待办事项、预警信息</td>
+                                    </tr>
+                                    <tr class="listTableText list_list">
+                                        <td><input type="checkbox" class="input_checkBox" name="" id="" value=""></td>
+                                        <td><a class="cursor" href="">车间调度员</a></td>
+                                        <td>010005</td>
+                                      	<td class="td_ellipsis" title="物料需求申请管理、安全库存补料管理、单据查询、库存账龄查询、库存可用量查询、预警查询、出入库统计、库存物料统计、物料领用分析、待办事项、预警信息">物料需求申请管理、安全库存补料管理、单据查询、库存账龄查询、库存可用量查询、预警查询、出入库统计、库存物料统计、物料领用分析、待办事项、预警信息</td>
+                                    </tr>
+                                    <tr class="listTableText list_list">
+                                        <td><input type="checkbox" class="input_checkBox" name="" id="" value=""></td>
+                                        <td><a class="cursor" href="">物料配送员</a></td>
+                                        <td>010004</td>
+                                       	<td class="td_ellipsis">待办事项、预警信息</td>
+                                    </tr>
+                                    <tr class="listTableText list_list">
+                                        <td><input type="checkbox" class="input_checkBox" name="" id="" value=""></td>
+                                        <td><a class="cursor" href="">系统管理员</a></td>
+                                        <td>010003</td>
+                                        <td class="td_ellipsis">用户管理、组织机构、待办事项、预警信息</td>
+                                    </tr>
+                                    <tr class="listTableText list_list">
+                                        <td><input type="checkbox" class="input_checkBox" name="" id="" value=""></td>
+                                        <td><a class="cursor" href="">安全保密员</a></td>
+                                        <td>010002</td>
+                                      	<td class="td_ellipsis">用户权限、日志管理、待办事项、预警信息</td>
+                                    </tr>
+                                    <tr class="listTableText list_list">
+                                        <td><input type="checkbox" class="input_checkBox" name="" id="" value=""></td>
+                                        <td><a class="cursor" href="">安全审计员</a></td>
+                                        <td>010001</td>
+                                        <td class="td_ellipsis">日志管理、待办事项、预警信息</td>
+                                    </tr>
+                                </tbody>
+
+                            </table>
+                        </div>
+	                    <!-- 页码区域 -->
+	                    <div class="page_area contentText clear">
+	                    	<div class="page_sum">
+	                    		共<span class="page_number"> 3 </span>页&emsp;每页 10 条&emsp;共<span class="info_sum"> 27 </span>条记录
+	                    	</div>
+	                        <div class="page-pull-right async-page">
+	                            <button>首页</button>
+	                            <button>&lt;&lt;</button>
+	                            <button class="select_page">1</button>
+	                            <button>2</button>
+	                            <button>3</button>
+	                            <button>&gt;&gt;</button>
+	                            <button>尾页</button>
+	                        </div>
+	                    </div>
+                    </div>
+                </div>
+			</div>
+			
+			<!-- 版尾  -->
+			<div class="ending">
+				Copyright© 2017-2018 西安磐基新能源科技有限公司
+			</div>
+		</div>
+	</body>
+	<script src="../../js/jquery-3.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../js/frame/common.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		var h = document.documentElement.clientHeight;
+		$(".wrap").css("height", h);
+		
+		// 获取每行 td 的兄弟节点
+		$("td").hover(   
+			function () {      
+				$(this).parent().children().addClass("td_hover");   
+			},    
+			function () {      
+				$(this).parent().children().removeClass("td_hover");   
+			}
+		);
+		
+		
+		//删除规则
+	    function delUserGroup() {
+			
+	        var list = [];
+	        var checks = $("input[name='ids']:checked");
+	        $.each(checks, function(index, obj) {
+	            list.push(obj.id);
+	        });
+	        if (!list.length > 0) {
+	            alert("请选择要删除的内容");
+	            return;
+	        }
+	        if (!confirm("确定要删除所选用户组吗？")) {
+	            return;
+	        }
+	        alert("提醒:删除时，正在使用的用户组将无法删除！");
+	        $.ajax({
+	            type : 'POST',
+	            url : 'userGroup/delUserGroup',
+	            data : JSON.stringify(list),
+	            contentType : 'application/json; charset=utf-8',
+	            async : true,
+	            cache : false,
+	            success : function(data) {
+	                alert(data == 'success' ? "删除成功" : "被使用：无法删除!!!");
+	                if (data != 'success') {
+	                    return;
+	                }
+	
+	                var current = PageUtils._currentPage['userGroupPage'];
+	                PageUtils.pageClick(current, 'userGroupPage');
+	            }
+	
+	        });
+	    }
+	</script>
+</html>

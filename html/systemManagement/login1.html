@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			.wrap{
+				width: 100%;
+				margin: 0px auto;
+				background: -webkit-linear-gradient(top,rgb(222, 235, 252),rgb(102, 194, 226));
+				background: -ms-linear-gradient(top, rgb(222, 235, 252) 0%,rgb(102, 194, 226) 100%);
+			    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='rgb(222, 235, 252)', endColorstr='rgb(102, 194, 226)',GradientType=0 );;
+				position: relative;
+			}
+			.content{
+				width: 400px;
+				height: 280px;
+				background: white;
+				border-radius: 5px;
+				position: absolute;
+				top: 200px;
+				left: 50%;
+				margin-left: -200px;
+				box-shadow: 2px 2px 5px rgb(80, 80, 80);
+			}
+			/*-------- logo --------*/
+			.logo img{
+				border: none;
+				display: block;
+				width: 90%;
+				margin: 20px auto;
+				border: 0;
+			}
+			.write{
+				position: relative;
+				top: 0px;
+			}
+			label{
+				display: inline-block;
+				width: 65px;
+				margin-left: 60px;
+			}
+			label:nth-child(1){
+				margin-top: 10px;
+			}
+			.write input{
+				outline: none;
+				width: 200px;
+				height: 25px;
+				border-radius: 5px;
+				text-indent: 2em;
+				border:none;
+				line-height: 25px;
+			}
+			.write img{
+				border: none;
+				position: relative;
+				left: 25px;
+				top: 5px;
+			}
+			.btn_noSelect{
+				background: rgb(255, 255, 255) !important;
+				color: black !important;
+				border-radius: 3px;
+				margin: 4px 5px !important;
+			}
+			.button{
+				margin-top: 20px;
+				text-align: center;
+			}
+			button{
+				border: none;
+				background:none;
+				outline:none;
+			}
+			.bgd_blue_two
+			{
+				background:url(../../img/button/bgd_blue_two.png);
+				 display:inline-block;
+				 font-size:14px;
+				 width:50px;
+				 height:22px;
+				 text-align:center;
+				 line-height:22px;
+				 margin-left:20px;
+				 color:white;
+			}
+			
+			.bgd_white_two
+			{
+				background:url(../../img/button/bgd_white_two.png);
+				 display:inline-block;
+				 font-size:14px;
+				 width:50px;
+				 height:22px;
+				 text-align:center;
+				 line-height:22px;
+				 margin-left:20px;
+				 color:black !important;
+			}
+			
+			.bgd_white_three
+			{
+				background:url(../../img/button/bgd_white_three.png) no-repeat;
+				 display:inline-block;
+				 font-size:14px;
+				 width:60px;
+				 height:22px;
+				 text-align:center;
+				 line-height:22px;
+				 margin-left:20px;
+				 color:black !important;
+				 margin-bottom: 10px;
+			}
+			.bgd_blue_three
+			{
+				background:url(../../img/button/bgd_blue_three.png) no-repeat;
+				 display:inline-block;
+				 font-size:14px;
+				 width:60px;
+				 height:22px;
+				 text-align:center;
+				 line-height:22px;
+				 margin-left:20px;
+				 color:black !important;
+				 margin-bottom: 10px;
+			}
+			#uname{
+				background:url(../../img/login/input_username.png) no-repeat;
+			}
+			#password{
+				background:url(../../img/login/input_password.png) no-repeat;
+			}
+			.checkPassword{
+				height: 20px;
+				padding: 0;
+				margin: 0;
+			}
+			#login1{
+				color: white !important;
+			}
+			.bottom{
+				text-align: center;
+				font-size: 12.8px;
+				position: absolute;
+				top: 550px;
+				left: 640px;
+			}
+		</style>
+	</head>
+	<body>
+		<!------------ 登录背景图 ------------>
+		<div class="wrap">
+			<!------------ 中间内容框 ------------>
+			<div class="content">
+				<!----- logo ----->
+				<div class="logo">
+					<a href=""><img src="../../img/top/logo.png"></a>
+				</div>
+				<!----- 输入框 ----->
+				<form action="user/userlogin" method="post" id="formSubmit">
+				<div class="write">
+					<label>用户名：</label>
+					<input type="text" name="uname" id="uname" value="admin"><br>
+					<center><p class="checkPassword"></p></center>
+					<label>密 码：</label>
+					<input type="password" name="password" id="password" value="admin">
+					<center><p class="checkPassword"></p></center>
+				</div>
+				</form>
+				<!----- 按钮区 ----->
+				<div class="button">
+					<button id="login" onclick="chenck()" class="bgd_blue_two img_hand">登录</button>
+					<button id="login1" onclick="chenck()" class="bgd_blue_three img_hand">CA登录</button>
+					
+					<button id="lReset" onclick="resetForm()" class="bgd_white_two img_hand">取消</button>
+				</div>
+			</div>
+			<!------------ 版尾区 ------------>
+			<div class="bottom">
+				Copyright© 2017-2018 西安磐基新能源科技有限公司
+			</div>
+		</div>
+	</body>
+	<script src="../../js/jquery-3.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		var h = document.documentElement.clientHeight;
+		$(".wrap").css("height", h);
+	</script>
+</html>

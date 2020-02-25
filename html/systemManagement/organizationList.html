@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>组织机构列表</title>
+		<link rel="stylesheet" type="text/css" href="../../css/zTreeStyle.css"/>
+		<link rel="stylesheet" type="text/css" href="../../css/style.css"/>
+		<link rel="stylesheet" type="text/css" href="../../css/list.css"/>
+		<!--[if IE 8]>
+			<style type="text/css">
+				.mask {  
+				    background: url(about:blank);
+				} 
+				.loader {  
+				    background: url(about:blank);
+				} 
+				#msg_mask {  
+				    background: url(about:blank);
+				} 
+			</style>
+		<![endif]-->
+	</head>
+	<body>
+		<!-- 蓝色背景区域 -->
+		<div class="wrap">
+			<!-- 白色可用区域 -->
+			<div class="canuse">
+				<!------ 位置 ------>
+	             <p class="contentText local"><span>位置：用户管理 > 组织机构管理列表</span></p>
+	            
+	            <!-- 列表区 -->
+	            <div class="show_list">
+						<div class="title_operate">
+                    	<h4 class="sel_title"><img src="../../img/list/brand1.png" /><span>组织机构列表</span></h4>
+                		
+                        <!-- 操作类型区 -->
+                        <div class="operate_area">
+                            <a href="organizationAdd.html" class="bgd_add img_hand">增加</a> 
+                            <a id="editOrg" class="bgd_update img_hand" >编辑</a>
+                           <!--  <a onclick="delOrg();" class="bgd_delete img_hand">删除</a>  -->
+                            <a id="remove" class="bgd_delete img_hand" onclick="return false;">删除</a>
+                        </div>
+                	</div>
+	            	<div class="list_area">
+                    <div class="zTreeDemoBackground">
+		                <ul id="treeDemo" class="ztree"></ul>
+	                 </div>
+                    </div>
+                </div>
+			</div>
+			
+			<!-- 版尾  -->
+			<div class="ending">
+				Copyright© 2017-2018 西安磐基新能源科技有限公司
+			</div>
+		</div>
+	</body>
+	<script src="../../js/jquery-3.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+	 <script src="../../js/jquery-zTreeStyle.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript" src="../../js/jquery.ztree.core-3.5.js"></script>
+	<script type="text/javascript" src="../../js/jquery.ztree.excheck-3.5.js"></script>
+	<script type="text/javascript" src="../../js/jquery.ztree.exedit-3.5.js"></script>
+	<script src="../../js/frame/common.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		var h = document.documentElement.clientHeight;
+		$(".wrap").css("height", h);
+		
+		var setting = {
+				view: {
+					selectedMulti: false
+				},
+				edit: {
+					enable: true,
+					showRemoveBtn: false,
+					showRenameBtn: false
+				},
+				data: {
+					keep: {
+						parent:true,
+						leaf:true
+					},
+					simpleData: {
+						enable: true
+					}
+				},
+				callback: {
+					beforeDrag: beforeDrag,
+					beforeRemove: beforeRemove,
+				}
+			};
+
+ var zNodes;		
+$(function() {
+	zNodes = [{"id":5,"pId":4,"name":"结构产品事业部-1","open":"true"},{"id":4,"pId":1,"name":"结构产品事业部","open":"true"},{"id":3,"pId":1,"name":"总装中心","open":"true"},{"id":2,"pId":1,"name":"热控产品事业部","open":"true"},{"id":1,"pId":-1,"name":"812所","open":"true"}];
+    $.fn.zTree.init($("#treeDemo"), setting, zNodes);
+	$("#remove").bind("click", remove);
+	$("#editOrg").bind("click", editOrg);
+});
+
+var log, className = "dark";
+function beforeDrag(treeId, treeNodes) {
+	return false;
+}
+function beforeRemove(treeId, treeNode) {
+	className = (className === "dark" ? "":"dark");
+	showLog("[ "+getTime()+" beforeRemove ]&nbsp;&nbsp;&nbsp;&nbsp; " + treeNode.name);
+	return confirm("确认删除 节点 -- " + treeNode.name + " 吗？");
+}
+
+
+function editOrg(e) {
+	var zTree = $.fn.zTree.getZTreeObj("treeDemo");
+	nodes = zTree.getSelectedNodes();
+	if (nodes.length == 0) {
+		alert("请先选择一个节点，才可进行编辑操作。");
+		return;
+	}
+	treeNode = nodes[0];
+	if(treeNode.id == '1' || treeNode.id == '2'|| treeNode.id == '3'|| treeNode.id == '4')
+	{
+		alert("初始化的节点: "+treeNode.name+"，不可以进行编辑操作。");
+		return;
+	}
+	 window.location.href = "organizationUpdate.html";
+};
+
+
+function remove(e) {
+	var zTree = $.fn.zTree.getZTreeObj("treeDemo");
+	nodes = zTree.getSelectedNodes();
+	if (nodes.length == 0) {
+		alert("请先选择一个节点，才可进行删除操作。");
+		return;
+	}
+	treeNode = nodes[0];
+	if(treeNode.id == '1' || treeNode.id == '2'|| treeNode.id == '3'|| treeNode.id == '4')
+	{
+		alert("初始化的节点: "+treeNode.name+"，不可以进行删除操作。");
+		return;
+	}
+	var callbackFlag = $("#callbackTrigger").attr("checked");
+	zTree.removeNode(treeNode, callbackFlag);
+	
+	var list = [];//项目中要删除的id集合
+ 
+    list.push(treeNode.id);
+    if (list.length == 0){
+        return;
+    }
+    
+    window.confirm("确定要删除组织机构吗?",function(result){
+        if (result){
+            var deleteUrl = 'org/delOrg';
+            CommonUtils.getAjaxData({
+                url : deleteUrl,
+                data : JSON.stringify(list),
+                type : 'POST'
+            }, function(data) {
+                if(data=="success"){
+                    //刷新当前分页数据
+                    var current = PageUtils._currentPage['orgPage'];
+    				PageUtils.pageClick(current, 'orgPage');
+                }
+            });
+        }
+        window.location.href = "organizationUpdate.html";
+    });
+};
+	</script>
+</html>

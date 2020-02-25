@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>添加用户组权限</title>
+		<link rel="stylesheet" type="text/css" href="../../css/style.css"/>
+		<link rel="stylesheet" type="text/css" href="../../css/form.css"/>
+	</head>
+	<body>
+		<!-- 蓝色背景区域 -->
+		<div class="wrap">
+			<!-- 白色可用区域 -->
+			<div class="canuse">
+				<!------ 位置 ------>
+	            <p class="contentText local"><span>位置：用户管理 > 用户组权限管理 > 添加用户组信息</span></p>
+	            
+			    	<div class="article_list" style="width: 98.5%; margin: 0px auto;">
+			            <!------- 内容 ------->
+			            <div class="content content1">
+			                <!-- 用户列表内容区 -->
+			                <div class="con con_01">
+			                    <!-- 表单信息填写区 -->
+			                    <h4 class="sel_title"><img src="../../img/list/brand1.png" /><span>填写用户组信息</span><span class="necessary">（带*号为必填项）</span></h4>
+			                    <div class="write_area">
+			                        <form id="addFrom" action="" method="post">
+			                            <table class="contentText" border="1" cellspacing="0" cellpadding="0" width="99%">
+			                                <tbody>
+			                                    <tr>
+			                                        <th>用户组编码：</th>
+			                                        <td>
+			                                        	<input id="" name="" type="number" value=""> <span class="redColor">*</span>
+			                                        </td>
+			                                        <th>用户组名称：</th>
+			                                        <td colspan="3">
+			                                        	<input id="" name="" type="text" value=""> <span class="redColor">*</span>
+			                                        </td>
+			                                        
+			                                    </tr>
+			                                    <tr>
+			                                    	<th>权限的配置：</th>
+			                                    	<td colspan="5">
+			                                            <ul style="height: 350px !important; overflow-Y: auto; overflow-X: hidden;" class="scroll_style">
+			                                                <li class="li-level1">
+			                                                    <h3 style="font-size: 15px;font-weight: bold;">物料管理</h3>
+			                                                    <ul>
+			                                                        <li class="li-level2 clear"><span><input id="" name="" class="input_checkBox" type="checkbox"><b>基础信息管理</b></span>
+			                                                            <ul>
+			                                                                <li>
+			                                                                    <div class="div1 clear">
+			                                                                        <span><input id="" name="" class="input_checkBox" type="checkbox" value="计量单位管理"><label>计量单位管理</label></span>
+			                                                                        <span><input id="" name="" class="input_checkBox" type="checkbox" value="物资类型管理"><label>物资类型管理</label></span>
+			                                                                        <span><input id="" name="" class="input_checkBox" type="checkbox" value="物料信息管理"><label>物料信息管理</label></span>
+			                                                                        <span><input id="" name="" class="input_checkBox" type="checkbox" value="供应商管理"><label>供应商管理</label></span>
+			                                                                        <span><input id="" name="" class="input_checkBox" type="checkbox" value="仓库管理"><label>仓库管理</label></span>
+			                                                                        <span><input id="" name="" class="input_checkBox" type="checkbox" value="库位管理"><label>库位管理</label></span>
+			                                                                    </div>
+			                                                                </li>
+			                                                            </ul>
+			                                                        </li>
+			                                                        
+			                                                        <li class="li-level2 clear"><span><input id="" name="" class="input_checkBox" type="checkbox"><b>库存日常管理</b></span>
+			                                                            <ul>
+			                                                                <li>
+			                                                                    <div class="div1 clear">
+			                                                                        <span><input id="" name="" class="input_checkBox" type="checkbox" value="入库管理"><label>入库管理</label></span>
+			                                                                        <span><input id="" name="" class="input_checkBox" type="checkbox" value="出库管理"><label>出库管理</label></span>
+			                                                                    </div>
+			                                                                </li>
+			                                                            </ul>
+			                                                        </li>
+			                                                        
+			                                                        <li class="li-level2 clear"><span><input id="" name="" class="input_checkBox" type="checkbox"><b>库存规则管理</b></span>
+			                                                            <ul>
+			                                                                <li>
+			                                                                    <div class="div1 clear">
+			                                                                        <span><input id="" name="" class="input_checkBox" type="checkbox" value="安全库存规则"><label>安全库存规则</label></span>
+			                                                                        <span><input id="" name="" class="input_checkBox" type="checkbox" value="库存盘点规则"><label>库存盘点规则</label></span>
+			                                                                        <span><input id="" name="" class="input_checkBox" type="checkbox" value="物料出库规则"><label>物料出库规则</label></span>
+			                                                                        <span><input id="" name="" class="input_checkBox" type="checkbox" value="规则优先级"><label>规则优先级</label></span>
+			                                                                    </div>
+			                                                                </li>
+			                                                            </ul>
+			                                                        </li>
+			                                                        
+			                                                        <li class="li-level2 clear"><span><input id="" name="" class="input_checkBox" type="checkbox"><b>库存盘点管理</b></span>
+			                                                            <ul>
+			                                                                <li>
+			                                                                    <div class="div1 clear">
+			                                                                        <span><input id="" name="" class="input_checkBox" type="checkbox" value="安全库存规则"><label>库存盘点</label></span>
+			                                                                        <span><input id="" name="" class="input_checkBox" type="checkbox" value="库存盘点规则"><label>盘点审核</label></span>
+			                                                                        <span><input id="" name="" class="input_checkBox" type="checkbox" value="物料出库规则"><label>盘点差异调整</label></span>
+			                                                                    </div>
+			                                                                </li>
+			                                                            </ul>
+			                                                        </li>
+			                                                        
+			                                                        <li class="li-level2 clear"><span><input id="" name="" class="input_checkBox" type="checkbox"><b>物料需求管理</b></span>
+			                                                            <ul>
+			                                                                <li>
+			                                                                    <div class="div1 clear">
+			                                                                        <span><input id="" name="" class="input_checkBox" type="checkbox" value="安全库存规则"><label>物料需求申请</label></span>
+			                                                                        <span><input id="" name="" class="input_checkBox" type="checkbox" value="库存盘点规则"><label>安全库存补料</label></span>
+			                                                                    </div>
+			                                                                </li>
+			                                                            </ul>
+			                                                        </li>
+			                                                        
+			                                                        <li class="li-level2 clear"><span><input id="" name="" class="input_checkBox" type="checkbox"><b>库存查询管理</b></span>
+			                                                            <ul>
+			                                                                <li>
+			                                                                    <div class="div1 clear">
+			                                                                        <span><input id="" name="" class="input_checkBox" type="checkbox" value="单据查询"><label>单据查询</label></span>
+			                                                                        <span><input id="" name="" class="input_checkBox" type="checkbox" value="账龄/有效期查询"><label>账龄/有效期查询</label></span>
+			                                                                        <span><input id="" name="" class="input_checkBox" type="checkbox" value="库存可用量查询"><label>库存可用量查询</label></span>
+			                                                                        <span><input id="" name="" class="input_checkBox" type="checkbox" value="预警查询"><label>预警查询</label></span>
+			                                                                    </div>
+			                                                                </li>
+			                                                            </ul>
+			                                                        </li>
+			                                                        
+			                                                        <li class="li-level2 clear"><span><input id="" name="" class="input_checkBox" type="checkbox"><b>报表统计管理</b></span>
+			                                                            <ul>
+			                                                                <li>
+			                                                                    <div class="div1 clear">
+			                                                                        <span><input id="" name="" class="input_checkBox" type="checkbox" value="出入库统计"><label>出入库统计</label></span>
+			                                                                        <span><input id="" name="" class="input_checkBox" type="checkbox" value="库存物料统计"><label>库存物料统计</label></span>
+			                                                                        <span><input id="" name="" class="input_checkBox" type="checkbox" value="物料领用分析"><label>物料领用分析</label></span>
+			                                                                    </div>
+			                                                                </li>
+			                                                            </ul>
+			                                                        </li>
+			                                                    </ul>
+	                                                        </li>
+			                                                <li class="li-level1">
+			                                                    <h3 style="font-size: 15px;font-weight: bold;">系统管理</h3>
+			                                                    <ul>
+			                                                        <li class="li-level2 clear"><span><input id="" name="" class="input_checkBox" type="checkbox"><b>用户管理</b></span>
+			                                                            <ul>
+			                                                                <li>
+			                                                                    <div class="div1 clear">
+			                                                                        <span><input id="" name="" class="input_checkBox" type="checkbox" value="用户管理"><label>用户管理</label></span>
+			                                                                        
+			                                                                        <span><input id="" name="" class="input_checkBox" type="checkbox" value="组织机构管理"><label>组织机构管理</label></span>
+																					<span><input id="" name="" class="input_checkBox" type="checkbox" value="用户组权限管理"><label>用户组权限管理</label></span>
+																					<span><input id="" name="" class="input_checkBox" type="checkbox" value="用户组权限管理"><label>用户组权限配置管理</label></span>
+			                                                                    </div>
+			                                                                </li>
+			                                                            </ul>
+			                                                        </li>
+			                                                        <li class="li-level2 clear"><span><input id="" name="" class="input_checkBox" type="checkbox"><b>日志管理</b></span>
+			                                                            <ul>
+			                                                                <li>
+			                                                                    <div class="div1 clear">
+			                                                                        <span><input id="" name="" class="input_checkBox" type="checkbox" value="日志管理"><label>日志管理</label></span>
+			                                                                    </div>
+			                                                                </li>
+			                                                            </ul>
+			                                                        </li>
+			                                                        
+			                                                    </ul>
+			                                                </li>
+			                                                <li class="li-level1">
+			                                                    <h3 style="font-size: 15px;font-weight: bold;">我的工作台</h3>
+			                                                    <ul>
+			                                                        <li class="li-level2 clear"><span><input id="" name="" class="input_checkBox" type="checkbox"><b>工作台管理</b></span>
+			                                                            <ul>
+			                                                                <li>
+			                                                                    <div class="div1 clear">
+			                                                                         <span><input id="" name="" class="input_checkBox" type="checkbox" value="待办事项"><label for="">待办事项</label></span>
+																					<span><input id="" name="" class="input_checkBox" type="checkbox" value="预警信息"><label for="">预警信息</label></span>
+			                                                                    </div>
+			                                                                </li>
+			                                                            </ul>
+			                                                        </li>
+			                                                        
+			                                                        
+			                                                    </ul>
+			                                                </li>
+			                                            </ul>
+			                                        </td>
+			                                    </tr>
+			                                    <tr>
+			                                        <th>用户组描述：</th>
+			                                        <td colspan="3">
+			                                        	<textarea name="" rows="" cols="" style="width: 95%; height: 80px;"></textarea>
+			                                        </td>
+			                                    </tr>
+			                                </tbody>
+			                            </table>
+			                        </form>
+			                        <!-- 保存、重置按钮区 -->
+			                        <div align="center" class="btn_submit">
+			                            <a href="usergroupList.html" class="bgd_blue_two img_hand contentText">确定</a>
+			                            <a href="usergroupList.html" class="bgd_white_two img_hand"> 返回 </a>
+			                        </div>
+			                    </div>
+			                </div>
+			            </div>
+			        </div>
+				</div>
+	            
+			</div>
+			
+			<!-- 版尾  -->
+			<div class="ending">
+				Copyright© 2017-2018 西安磐基新能源科技有限公司
+			</div>
+		</div>
+	</body>
+	<script src="../../js/jquery-3.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		var h = document.documentElement.clientHeight;
+		$(".wrap").css("height", h);
+		
+		// 获取每行 td 的兄弟节点
+		$(".info_area td").hover(   
+			function () {      
+				$(this).parent().children().addClass("td_hover");   
+			},    
+			function () {      
+				$(this).parent().children().removeClass("td_hover");   
+			}
+		);
+		
+	</script>
+</html>

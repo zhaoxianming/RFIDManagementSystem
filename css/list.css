@@ -1,0 +1,481 @@
+/*----- 蓝色背景区域 -----*/
+.wrap{
+	background: rgb(230, 245, 255);
+	border: 1px solid transparent;
+	box-sizing: border-box;
+}
+
+/*----- 白色可用区域 -----*/
+.canuse{
+	overflow-y: auto;
+	background: white;
+	width: 99%;
+	height: 98%;
+	margin: 7px auto;
+	border-radius: 5px;
+	border: 1px solid transparent;
+	box-sizing: border-box;
+}
+/*------ 页面路径 -----*/
+.local{
+	height: 30px;
+	line-height: 30px;
+	/*text-indent: 0.5rem;*/
+	background: -webkit-linear-gradient(top, #f0f0f0, #dcdcdc);
+	background: -ms-linear-gradient(top, #f0f0f0 0%, #dcdcdc 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=#f0f0f0, endColorstr=#dcdcdc,GradientType=0 );
+	position: relative;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+.local span{
+	margin-left: 10px;
+}
+/*----- 列表标题 -----*/
+.sel_title{
+	width: 99.4%;
+	margin: auto;
+	margin-top: 10px;
+	padding: 3px 0px;
+	/*background: rgb(238, 245, 252);*/
+	background: -webkit-linear-gradient(top, #e1ebfa, #f5f9ff);
+	background: -ms-linear-gradient(top, #e1ebfa 0%, #f5f9ff 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=#e1ebfa, endColorstr=#f5f9ff,GradientType=0 );
+	
+	border: 1px solid rgb(222, 235, 252);	
+	box-sizing: border-box;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}.sel_title span{
+	font-size: 15px;
+	position: relative;
+	top: 2px;
+}
+.sel_title img{
+	vertical-align: middle;
+	margin: auto 10px;
+}
+.select_area, .list_area {
+	border: 1px solid rgb(222, 235, 252);	
+	border-top: none;
+	box-sizing: border-box;
+	background: white;
+	width: 99.4%;
+	margin: 0px auto;
+	position: relative;
+}
+/*------- 搜索内容区 -------*/
+.select_text{
+	margin-left: 30px;
+	padding: 10px 0px;
+	padding-top: 20px;
+}
+.select_text1{
+	margin-left: 30px;
+	padding: 40px 0px;
+}
+.label_input{
+	height: 25px;
+	float: left !important;
+	margin-right: 40px;	
+	margin-bottom: 10px;
+}
+.label_input label{
+	color: rgb(100, 100, 140);
+}
+.label_input input{
+	box-sizing: border-box;
+	background: rgb(249, 252, 255);
+	/*background: rgb(255, 250, 242);*/
+	border: 1px solid rgb(222, 235, 252);	
+}
+.label_input select{
+	font-size: 12px;
+	background: rgb(249, 252, 255);
+	/*background: rgb(255, 250, 242);*/
+	border: 1px solid rgb(222, 235, 252);	
+}
+.select_text select span{
+	color: gray;
+}
+.select_text button{
+	border: none;
+	color: white;
+	margin-left: 0px;
+	margin-right: 10px;
+}
+.select_text button:hover{
+	cursor: pointer;
+}
+.select_text button img{
+	vertical-align: middle;
+}
+
+/*----- 操作按钮 -----*/
+.title_operate{
+	position: relative;
+}
+.operate_area{
+	position: absolute;
+	top: 5px;
+	right: 10px;
+}
+.operate_area img{
+	vertical-align: middle;
+	margin-left: 10px;
+	padding: 5px 0px;
+}
+.operate_area span{
+	color: rgb(44, 11, 182);
+}
+.operate_area span:hover{
+	cursor: pointer;
+}
+
+
+/*----- 列表区域 -----*/
+.info_area {
+	width: 99.5%;
+	margin: 0px auto;
+	padding-top: 10px;
+	margin-bottom: 10px;
+	background: white;
+}
+.info_area img{
+	vertical-align: middle;
+}
+.info_area table{
+	width:100%;
+	border-collapse: collapse;
+	border: 1px solid rgb(220, 220, 220);
+	box-sizing: border-box;
+}
+tr th{
+	padding: 5px 0px;
+	background: rgb(235, 245, 255);
+	text-align: center;
+	border: 1px solid rgb(220, 220, 220);
+	box-sizing: border-box;
+}
+
+.tableInput input{
+	width: 100px;
+}
+.tableInput select{
+	width: 100px;
+}
+.tableInput textarea{
+	height: 20px;
+}
+tr td{
+	padding: 5px 0px;
+	text-align: center;
+	border: 1px solid rgb(220, 220, 220);
+	box-sizing: border-box;
+}
+tr:nth-of-type(2n+1){
+	background: rgb(235, 245, 255);
+} 
+
+.list_head th{
+	height: 30px;
+	/*background: rgb(210, 229, 247) !important;*/
+	background: -webkit-linear-gradient(top, #d2e5fa, #ebf5fa);
+	background: -ms-linear-gradient(top, #d2e5fa 0%, #ebf5fa 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=#d2e5fa, endColorstr=#ebf5fa,GradientType=0 );
+}
+.list_list input[type='checkBox']{
+	width: 14px !important;
+}
+
+.tablelist tr td input{
+	width: 120px;
+} 
+
+.td_hover{
+	background: rgb(255, 235, 210);
+	cursor: pointer;
+}
+.btn_watch:hover{
+	cursor: pointer;
+}
+.up_down_arrow{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	vertical-align: middle;
+}
+.up_arrow{
+	background: url(../img/form/sort_up_black.png);
+}
+.down_arrow{
+	background: url(../img/form/sort_down_black.png);
+}
+.state{
+	width: 60px;
+	line-height: 20px !important;
+	font-size: 11px;
+}
+#de{
+	display: inline-block;
+}
+.margin_none{
+	margin: 0px !important;
+}
+
+/*----- 页码 -----*/
+.page_area{
+	width: 100%;	
+	/*text-align: center;*/
+	padding: 5px 0px;
+	margin-bottom: 10px;
+}
+.page_sum{
+	float: left;
+	font-size: 11px;
+	margin-left: 10px;
+	color: rgb(90, 90, 90);
+}
+.async-page{
+	float: right;
+	margin-right: 10px;
+}
+.async-page > button{
+	font-size: 12px;
+	margin-right:5px;
+	padding: 1px 5px;
+	border-radius: 3px;
+	background: rgb(240, 240, 240);
+	box-shadow: 1px 1px 1px 1px rgb(100, 100, 100);
+	cursor: pointer;
+}
+.async-page > button:hover{
+	background: rgb(68, 161, 248);
+}
+.select_page{
+	background: rgb(68, 161, 248) !important;
+	color: white;
+	font-weight: bold;
+}
+
+/*-------- 悬浮条形码 --------*/
+.barcode_hover{
+	width: 300px;
+	height: 100px;
+	background: url(../img/list/barcode.png);
+}
+
+/*-------- 预警告警提示图标 --------*/
+#warningBrand span{
+	font-size: 12px;
+	color: black;
+	margin-right: 5px;
+}
+.warningRed{
+	background: rgb(255, 0, 0);
+}
+.warningYellow{
+	background: rgb(255, 255, 0);
+}
+
+/*------- tab标签 -------*/
+.layui-tab{
+	width: 99.4%;
+	margin: 10px auto !important;
+}
+/*------ 内容区块  1 的内容 -----*/
+.content{
+	width: 101.4%;	
+	margin-left: -10px;
+	padding-bottom: 20px;		
+}
+
+/*---------- 统计方式单选框 ---------*/
+.operate_area input[name='s_type']{
+	width: 16px;
+	vertical-align: middle;
+}
+.operate_area input[name='s_type1']{
+	width: 16px;
+	vertical-align: middle;
+}
+.chart{
+	width: 90%;
+	margin: 0px auto;
+}
+.chart img{
+	width: 100%;
+}
+/*-------- 悬浮二维码 --------*/
+.twocode_hover{
+	width: 300px;
+	height: 300px;
+	/*background: white;*/
+	background: url(../img/list/twocode.png);
+	background-size: 100% 100%;
+	border: 1px solid rgb(100, 100, 100);
+	box-shadow: 1px 1px 2px rgb(150, 150, 150);
+	position: absolute;
+	left: 50%;
+	top:50%;
+	margin-top: -150px;
+	margin-left: -150px;
+}
+.twocode_hover img{
+	width: 100%;
+	height: 100%;
+}
+.th_twocode_hover{
+	width: 300px; 
+	height: 300px; 
+	background: white; 
+	border: 1px solid rgb(100, 100, 100); 
+	box-shadow: 1px 1px 2px rgb(150, 150, 150);
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	z-index: 100;
+	display: none;
+}
+.th_twocode_hover img{
+	width: 100%;
+	height: 100%;
+}
+.twocode:hover .th_twocode_hover{
+	display:block;
+}
+/*--------- 批量处理 --------*/
+#batchOperate{
+	color: #515151;
+	float: right;
+	margin-right: 5px;
+}
+#batchOperate img{
+	vertical-align: middle;
+	margin-right: 2px;
+	margin-top: -1px;
+}
+
+/*--------- 上传文件 --------*/
+.mask{
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5);
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 900;
+}
+.fileDiv{
+	width: 400px;
+	height: 200px;
+	border: 2px solid rgb(200, 200, 200);
+	background: white;
+	position: relative;
+	top: 50%;
+	left: 50%;
+	margin-top: -100px;
+	margin-left: -200px;
+}
+.fileTitle{
+	width: 100%;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	background: rgb(68, 161, 248);
+	color: white;
+}
+.fileTitle img{
+	float: right;
+	margin-top: -15px;
+	margin-right: -15px;
+	cursor: pointer;
+}
+.fileForm{
+	margin-top: 30px;
+	font-size: 15px;
+	text-align: center;
+}
+.fileForm label{
+	display: inline-block;
+}
+#fileInput{
+	width: 200px;
+	background: rgb(249, 252, 255);
+	border: 1px solid rgb(222, 235, 252);	
+}
+#subBtn{
+	display: inline-block;
+	width: 50px;
+	height: 24px;
+	background:url(../img/button/bgd_blue_two.png) no-repeat;
+	display:inline-block;
+	font-size:14px;
+	text-align:center;
+	line-height:22px;
+	color:white;
+}
+/*--------------- 超出一行显示省略号 ---------------*/
+.th_ellipsis{
+	width: 600px;
+}
+.td_ellipsis{
+	text-align: left;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+/*--- 入库导出模板 ---*/
+.export{
+	width:300px;
+	height:90px;
+	position:absolute;
+	top:-100px;
+	left:-110px;
+	z-index:999;
+	background:rgb(255, 235, 210);
+	border:2px solid rgb(255, 184, 153);
+	color:rgb(50, 50, 50);
+}
+
+/*--------- 涓婁紶鏂囦欢 --------*/
+.mask{
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#7F000000,endColorstr=#7F000000);
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 900;
+}
+.supplyDiv{
+	width: 800px;
+	height: 350px;
+	border: 2px solid darkgray;
+	background: white;
+	position: relative;
+	top: 50%;
+	left: 50%;
+	margin-top: -180px;
+	margin-left: -400px;
+}
+.supplyTitle{
+	width: 100%;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+	background: rgb(68, 161, 248);
+	color: white;
+}
+.supplyTitle img{
+	float: right;
+	margin-top: -15px;
+	margin-right: -15px;
+	cursor: pointer;
+}
+.supplyDiv table{
+	margin-top: 30px;
+	margin-bottom: 30px;
+}

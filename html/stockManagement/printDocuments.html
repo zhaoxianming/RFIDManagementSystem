@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>入库单打印单据</title>
+		<style type="text/css">
+			.wrap{
+				width: 100%;
+				margin: 0px auto;
+			}
+			table{
+				width: 100%;
+				font-size: 15px;
+			}
+			img{
+				width: 60px;
+				height: 60px;
+				vertical-align: middle;
+			}
+			th,td{
+				height: 25px;
+			}
+			.table_head{
+				background: rgb(255, 240, 220);
+			}
+			.list_head{
+				background: rgb(255, 240, 220);
+			}
+			.sureBtn{
+				margin-top: 20px;
+				text-align: center;
+			}
+			.bgd_blue_two{
+				text-decoration: none;
+				background:url(../../img/button/bgd_blue_two.png) no-repeat;
+				 display:inline-block;
+				 font-size:14px;
+				 width:50px;
+				 height:22px;
+				 text-align:center;
+				 line-height:22px;
+				 margin-left:20px;
+				 color:white;
+			}
+			.bgd_white_two{
+				text-decoration: none;
+				background:url(../../img/button/bgd_white_two.png) no-repeat;
+				 display:inline-block;
+				 font-size:14px;
+				 width:50px;
+				 height:22px;
+				 text-align:center;
+				 line-height:22px;
+				 margin-left:20px;
+				 color:black;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="wrap">
+            <table class="contentText" border="1" cellspacing="0" cellpadding="0">
+                <tbody class="table_head">
+                	<tr class="table_title"><th colspan="12">二级物料入库单</th></tr>
+                    <tr>
+                        <th>入库单号：</th>
+                        <td>20180405</td>
+                        <th>入库日期：</th>
+                        <td>2018/04/05</td>
+                        <th>制单人：</th>
+                        <td>王小仙</td>
+                        <th class="twocode" rowspan="3"><img src="../../img/list/twocode.png"/></th>
+                    </tr>
+                    <tr>
+                        <th>申领单号：</th>
+                        <td>RKD1254628</td>
+                        <th>申领部门：</th>
+                        <td>XX部门</td>
+                        <th>申领人：</th>
+                        <td>赵小四</td>
+                    </tr>
+                    <tr>
+                        <td colspan="6"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="contentText" border="1" cellspacing="0" cellpadding="0">
+            	<tbody>
+                    <tr class="menuText list_head">
+                        <th class="">序号</th>
+                        <th class="">物资编码</th>
+                        <th class="">物资名称</th>
+                        <th class="">物资规格</th>
+                        <th class="">物资型号/牌号/材料</th>
+                        <th class="">需求数量</th>
+                        <th class="">入库数量</th>
+                        <th class="">单位</th>
+                        <th class="">批次号</th>
+                        <th class="">库存位置</th>
+                        <th class="">生产日期</th>
+                        <th class="">失效日期</th>
+                    </tr>
+                </tbody>
+                <tbody class="tablelist">
+                    <tr class="listTableText list_list">
+                        <td>1</td>
+                        <td>210010199</td>
+                        <td>电阻器</td>
+                        <td>1K</td>
+                        <td>DZ-50</td>
+                        <td>100</td>
+                        <td>100</td>
+                        <td>卷</td>
+                        <td>PCB001</td>
+                        <td>1-2-1</td>
+                        <td>2018/05/21</td>
+                        <td>2020/05/20</td>
+                    </tr>
+                    <tr class="listTableText list_list">
+                        <td>2</td>
+                        <td>210010199</td>
+                        <td>电阻器</td>
+                        <td>1K</td>
+                        <td>DZ-50</td>
+                        <td>100</td>
+                        <td>100</td>
+                        <td>卷</td>
+                        <td>PCB001</td>
+                        <td>1-2-1</td>
+                        <td>2018/05/21</td>
+                        <td>2020/05/20</td>
+                    </tr>
+                    <tr class="listTableText list_list">
+                        <td>3</td>
+                        <td>210010199</td>
+                        <td>电阻器</td>
+                        <td>1K</td>
+                        <td>DZ-50</td>
+                        <td>100</td>
+                        <td>100</td>
+                        <td>卷</td>
+                        <td>PCB001</td>
+                        <td>1-2-1</td>
+                        <td>2018/05/21</td>
+                        <td>2020/05/20</td>
+                    </tr>
+                    <tr class="listTableText list_list">
+                        <td>4</td>
+                        <td>210010199</td>
+                        <td>电阻器</td>
+                        <td>1K</td>
+                        <td>DZ-50</td>
+                        <td>100</td>
+                        <td>100</td>
+                        <td>卷</td>
+                        <td>PCB001</td>
+                        <td>1-2-1</td>
+                        <td>2018/05/21</td>
+                        <td>2020/05/20</td>
+                    </tr>
+                    <tr class="listTableText list_list">
+                        <td>5</td>
+                        <td>210010199</td>
+                        <td>电阻器</td>
+                        <td>1K</td>
+                        <td>DZ-50</td>
+                        <td>100</td>
+                        <td>100</td>
+                        <td>卷</td>
+                        <td>PCB001</td>
+                        <td>1-2-1</td>
+                        <td>2018/05/21</td>
+                        <td>2020/05/20</td>
+                    </tr>
+                    <tr class="listTableText list_list">
+                        <td>6</td>
+                        <td>210010199</td>
+                        <td>电阻器</td>
+                        <td>1K</td>
+                        <td>DZ-50</td>
+                        <td>100</td>
+                        <td>100</td>
+                        <td>卷</td>
+                        <td>PCB001</td>
+                        <td>1-2-1</td>
+                        <td>2018/05/21</td>
+                        <td>2020/05/20</td>
+                    </tr>
+                    <tr class="listTableText list_list">
+                        <td>7</td>
+                        <td>210010199</td>
+                        <td>电阻器</td>
+                        <td>1K</td>
+                        <td>DZ-50</td>
+                        <td>100</td>
+                        <td>100</td>
+                        <td>卷</td>
+                        <td>PCB001</td>
+                        <td>1-2-1</td>
+                        <td>2018/05/21</td>
+                        <td>2020/05/20</td>
+                    </tr>
+                    <tr class="listTableText list_list">
+                        <td>8</td>
+                        <td>210010199</td>
+                        <td>电阻器</td>
+                        <td>1K</td>
+                        <td>DZ-50</td>
+                        <td>100</td>
+                        <td>100</td>
+                        <td>卷</td>
+                        <td>PCB001</td>
+                        <td>1-2-1</td>
+                        <td>2018/05/21</td>
+                        <td>2020/05/20</td>
+                    </tr>
+                    <tr class="listTableText list_list">
+                        <td>9</td>
+                        <td>210010199</td>
+                        <td>电阻器</td>
+                        <td>1K</td>
+                        <td>DZ-50</td>
+                        <td>100</td>
+                        <td>100</td>
+                        <td>卷</td>
+                        <td>PCB001</td>
+                        <td>1-2-1</td>
+                        <td>2018/05/21</td>
+                        <td>2020/05/20</td>
+                    </tr>
+                    <tr class="listTableText list_list">
+                        <td>10</td>
+                        <td>210010199</td>
+                        <td>电阻器</td>
+                        <td>1K</td>
+                        <td>DZ-50</td>
+                        <td>100</td>
+                        <td>100</td>
+                        <td>卷</td>
+                        <td>PCB001</td>
+                        <td>1-2-1</td>
+                        <td>2018/05/21</td>
+                        <td>2020/05/20</td>
+                    </tr>
+                    <tr class="listTableText list_list">
+                    	<td>小计</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>800</td>
+                        <td>800</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr class="listTableText list_list">
+                    	<td>合计</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>800</td>
+                        <td>800</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr class="listTableText list_list">
+                        <td></td>
+                    	<td>制单员</td>
+                        <td colspan="2">XXX</td>
+                        <td>审核人</td>
+                        <td colspan="3">XXX</td>
+                        <td>入库员</td>
+                        <td colspan="3">XXX</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="sureBtn">
+            	<a href="" class="bgd_blue_two">确定</a> 
+				<a href="" class="bgd_white_two">返回</a> 
+            </div>
+		</div>
+	</body>
+</html>

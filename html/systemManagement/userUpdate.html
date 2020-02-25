@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>修改用户</title>
+		<link rel="stylesheet" type="text/css" href="../../css/style.css"/>
+		<link rel="stylesheet" type="text/css" href="../../css/form.css"/>
+		<link rel="stylesheet" type="text/css" href="../../css/jquery-ui.css" />
+	</head>
+	<body>
+		<!-- 蓝色背景区域 -->
+		<div class="wrap">
+			<!-- 白色可用区域 -->
+			<div class="canuse">
+				<!------ 位置 ------>
+	            <p class="contentText local"><span>位置：用户管理 > 用户管理 > 修改用户信息</span></p>
+	            
+			    	<div class="article_list" style="width: 98.5%; margin: 0px auto;">
+			            <!------- 内容 ------->
+			            <div class="content content1">
+			                <!-- 用户列表内容区 -->
+			                <div class="con con_01">
+			                    <!-- 表单信息填写区 -->
+			                    <h4 class="sel_title"><img src="../../img/list/brand1.png" /><span>修改用户信息</span><span class="necessary">（带*号为必填项）</span></h4>
+			                    <div class="write_area">
+			                        <form id="addFrom" action="" method="post">
+			                            <table class="contentText" border="1" cellspacing="0" cellpadding="0" width="99%">
+			                                <tbody>
+			                                    <tr>
+			                                        <th>用户名：</th>
+			                                        <td>
+			                                        	<input id="" name="" type="text" value="小张"> <span class="redColor">*</span>
+			                                        </td>
+			                                        <th>登录名：</th>
+			                                        <td>
+			                                        	<input type="text" name="" id="" value="xiaozhang" /> <span class="redColor">*</span>
+			                                        </td>
+			                                        <th>所属组织机构：</th>
+			                                        <td>
+			                                        	<select name="">
+			                                        		<option value="">总装中心</option>
+			                                        		<option value="">热控产品事业部</option>
+			                                        		<option value="">结构产品事业部</option>
+			                                        	</select> 
+			                                        </td>
+			                                    </tr>
+			                                    <tr>
+			                                        <th>公司邮箱：</th>
+			                                        <td>
+			                                        	<input type="email" name="" id="" value="15826435971@163.com" />
+			                                        </td>
+			                                        <th>联系电话：</th>
+			                                        <td>
+			                                        	<input id="" name="" class="overLine" placeholder="长度4-20位,中文按二位计数,无特殊符" type="tel" value="15826435971">
+			                                        </td>
+			                                        <th>登录密码：</th>
+			                                        <td>
+			                                        	<input type="password" name="" id="" value="123456" /> <span class="redColor">*</span>
+			                                        </td>
+			                                    </tr>
+			                                    <tr>
+			                                        <th>入职日期：</th>
+			                                        <td colspan="5">
+			                                        	<input type="text" name="" value="2018-01-25" id="dateControl" readonly="readonly" />
+			                                        </td>
+			                                    </tr>
+			                                </tbody>
+			                            </table>
+			                        </form>
+			                        <!-- 保存、重置按钮区 -->
+			                        <div align="center" class="btn_submit">
+			                            <a href="userList.html" class="bgd_blue_two img_hand contentText">确定</a>
+			                            <a href="userList.html" class="bgd_white_two img_hand"> 返回 </a>
+			                        </div>
+			                    </div>
+			                </div>
+			            </div>
+			        </div>
+				</div>
+	            
+			</div>
+			
+			<!-- 版尾  -->
+			<div class="ending">
+				Copyright© 2017-2018 西安磐基新能源科技有限公司
+			</div>
+		</div>
+	</body>
+	<script src="../../js/jquery-3.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../js/jquery-ui.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		var h = document.documentElement.clientHeight;
+		$(".wrap").css("height", h);
+		
+		// 获取每行 td 的兄弟节点
+		$(".info_area td").hover(   
+			function () {      
+				$(this).parent().children().addClass("td_hover");   
+			},    
+			function () {      
+				$(this).parent().children().removeClass("td_hover");   
+			}
+		);
+		
+		// 日期控件
+		$(function(){
+	        $("#dateControl").datepicker({
+	        	dateFormat : 'yy-mm-dd',
+	            monthNamesShort:["January","February","March","April","May","June", "July","August","September","October","November","December"],
+	 		 	changeYear:true,
+	 		 	changeMonth:true,
+	 		 	showOn:"button",
+	 		 	buttonImage:"../../img/button/calendar.png",
+	 		 	buttonImageOnly:false
+	        });
+	     });
+		
+	</script>
+</html>

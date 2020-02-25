@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>物料领用查询</title>
+		<link rel="stylesheet" type="text/css" href="../../css/style.css"/>
+		<link rel="stylesheet" type="text/css" href="../../css/list.css"/>
+		<link rel="stylesheet" type="text/css" href="../../css/jquery-ui.css" />
+	</head>
+	<body>
+		<!-- 蓝色背景区域 -->
+		<div class="wrap">
+			<!-- 白色可用区域 -->
+			<div class="canuse">
+				<!------ 位置 ------>
+	            <p class="contentText local"><span>位置：库存管理 > 物料领用查询</span></p>
+	            
+		    		<!-- 搜索区 -->
+		            <div class="search_area">
+	                    <h4 class="sel_title"><img src="../../img/list/brand1.png" /><span>物料领用查询条件</span></h4>
+	                    <div class="select_area">
+	                        <div class="select_text clear">
+	                        	<div class="label_input">
+		                            <label class="contentText">物料编码：</label> <input type="text" name="" id="">
+	                        	</div>
+	                        	<div class="label_input">
+		                            <label class="contentText">物料类型：</label> <input type="text" name="" id="">
+	                        	</div>
+	                        	<div class="label_input">
+		                            <label class="contentText">物料名称：</label> <input type="text" name="" id="">
+	                        	</div>
+	                        	<div class="label_input">
+		                            <label class="contentText">物料规格：</label> <input type="text" name="" id="">
+	                        	</div>
+	                        	<div class="label_input">
+		                            <label class="contentText">物料型号：</label> <input type="text" name="" id="">
+	                        	</div>
+	                        	<div class="label_input">
+		                            <label class="contentText">产品型号：</label> <input type="text" name="" id="">
+	                        	</div>
+	                        	<div class="label_input">
+		                            <label class="contentText">开始日期：</label> <input type="text" name="" id="dateControl" readonly="readonly" />
+	                        	</div>
+	                        	<div class="label_input">
+		                            <label class="contentText">结束日期：</label> <input type="text" name="" id="dateControl1" readonly="readonly" />
+	                        	</div>
+	                            <div class="floatLeft">
+		                            <button class="btn_search bgd_blue_search">查询</button>
+		                            <button class="btn_clear bgd_white_clear">重置</button>
+	                            </div>
+	                        </div>
+	                    </div>
+		            </div>
+        
+        			<!-- 列表区 -->
+		            <div class="show_list">
+	                	<div class="title_operate">
+	                    	<h4 class="sel_title"><img src="../../img/list/brand1.png" /><span>物料领用列表</span></h4>
+	                	</div>
+	                	<div class="list_area">
+	                        <!-- 信息列表区 -->
+	                        <div class="info_area">
+	                            <table class="tablelist" border="1" cellspacing="0" cellpadding="0">
+	                                <tbody>
+	                                    <tr class="menuText list_head">
+	                                        <th class="">出库单编号</th>
+	                                        <th class="">物料编码</th>
+	                                        <th class="">物料类型</th>
+	                                        <th class="">物料名称</th>
+	                                        <th class="">物料规格</th>
+	                                        <th class="">物料型号/牌号/材料</th>
+	                                        <th class="">批次号</th>
+	                                        <th class="">产品型号</th>
+	                                        <th class="">生产日期</th>
+	                                        <th class="">质量等级</th>
+	                                        <th class="">技术条件</th>
+	                                        <th class="">仓库名称</th>
+	                                        <th class="">库存位置</th>
+	                                        <th class="">单位</th>
+	                                        <th class="">领用数量</th>
+	                                        <th class="">领用日期</th>
+	                                    </tr>
+	                                </tbody>
+	                                <tbody class="tablelist">
+	                                    <tr class="listTableText list_list">
+	                                        <td>CKD6350012</td>
+	                                        <td>5K电阻</td>
+	                                        <td>JGBY215254</td>
+	                                        <td>电阻</td>
+	                                        <td>DZ-50</td>
+	                                        <td>5K</td>
+	                                        <td>第一批</td>
+	                                        <td>XH2315001</td>
+	                                        <td>2018-05-29</td>
+	                                        <td>1st</td>
+	                                        <td>XXX</td>
+	                                        <td>二级库</td>
+	                                        <td>99-51</td>
+	                                        <td>盒</td>
+	                                        <td>100</td>
+	                                        <td>2018-06-06</td>
+	                                    </tr>
+	                                    <tr class="listTableText list_list">
+	                                        <td>CKD6350012</td>
+	                                        <td>5K电阻</td>
+	                                        <td>JGBY215254</td>
+	                                        <td>电阻</td>
+	                                        <td>DZ-50</td>
+	                                        <td>5K</td>
+	                                        <td>第一批</td>
+	                                        <td>XH2315001</td>
+	                                        <td>2018-05-29</td>
+	                                        <td>1st</td>
+	                                        <td>XXX</td>
+	                                        <td>二级库</td>
+	                                        <td>99-51</td>
+	                                        <td>盒</td>
+	                                        <td>100</td>
+	                                        <td>2018-06-06</td>
+	                                    </tr>
+	                                    <tr class="listTableText list_list">
+	                                        <td>CKD6350012</td>
+	                                        <td>5K电阻</td>
+	                                        <td>JGBY215254</td>
+	                                        <td>电阻</td>
+	                                        <td>DZ-50</td>
+	                                        <td>5K</td>
+	                                        <td>第一批</td>
+	                                        <td>XH2315001</td>
+	                                        <td>2018-05-29</td>
+	                                        <td>1st</td>
+	                                        <td>XXX</td>
+	                                        <td>二级库</td>
+	                                        <td>99-51</td>
+	                                        <td>盒</td>
+	                                        <td>100</td>
+	                                        <td>2018-06-06</td>
+	                                    </tr>
+	                                    <tr class="listTableText list_list">
+	                                        <td>CKD6350012</td>
+	                                        <td>5K电阻</td>
+	                                        <td>JGBY215254</td>
+	                                        <td>电阻</td>
+	                                        <td>DZ-50</td>
+	                                        <td>5K</td>
+	                                        <td>第一批</td>
+	                                        <td>XH2315001</td>
+	                                        <td>2018-05-29</td>
+	                                        <td>1st</td>
+	                                        <td>XXX</td>
+	                                        <td>二级库</td>
+	                                        <td>99-51</td>
+	                                        <td>盒</td>
+	                                        <td>100</td>
+	                                        <td>2018-06-06</td>
+	                                    </tr>
+	                                    <tr class="listTableText list_list">
+	                                        <td>CKD6350012</td>
+	                                        <td>5K电阻</td>
+	                                        <td>JGBY215254</td>
+	                                        <td>电阻</td>
+	                                        <td>DZ-50</td>
+	                                        <td>5K</td>
+	                                        <td>第一批</td>
+	                                        <td>XH2315001</td>
+	                                        <td>2018-05-29</td>
+	                                        <td>1st</td>
+	                                        <td>XXX</td>
+	                                        <td>二级库</td>
+	                                        <td>99-51</td>
+	                                        <td>盒</td>
+	                                        <td>100</td>
+	                                        <td>2018-06-06</td>
+	                                    </tr>
+	                                    <tr class="listTableText list_list">
+	                                        <td>CKD6350012</td>
+	                                        <td>5K电阻</td>
+	                                        <td>JGBY215254</td>
+	                                        <td>电阻</td>
+	                                        <td>DZ-50</td>
+	                                        <td>5K</td>
+	                                        <td>第一批</td>
+	                                        <td>XH2315001</td>
+	                                        <td>2018-05-29</td>
+	                                        <td>1st</td>
+	                                        <td>XXX</td>
+	                                        <td>二级库</td>
+	                                        <td>99-51</td>
+	                                        <td>盒</td>
+	                                        <td>100</td>
+	                                        <td>2018-06-06</td>
+	                                    </tr>
+	                                    <tr class="listTableText list_list">
+	                                        <td>CKD6350012</td>
+	                                        <td>5K电阻</td>
+	                                        <td>JGBY215254</td>
+	                                        <td>电阻</td>
+	                                        <td>DZ-50</td>
+	                                        <td>5K</td>
+	                                        <td>第一批</td>
+	                                        <td>XH2315001</td>
+	                                        <td>2018-05-29</td>
+	                                        <td>1st</td>
+	                                        <td>XXX</td>
+	                                        <td>二级库</td>
+	                                        <td>99-51</td>
+	                                        <td>盒</td>
+	                                        <td>100</td>
+	                                        <td>2018-06-06</td>
+	                                    </tr>
+	                                    <tr class="listTableText list_list">
+	                                        <td>CKD6350012</td>
+	                                        <td>5K电阻</td>
+	                                        <td>JGBY215254</td>
+	                                        <td>电阻</td>
+	                                        <td>DZ-50</td>
+	                                        <td>5K</td>
+	                                        <td>第一批</td>
+	                                        <td>XH2315001</td>
+	                                        <td>2018-05-29</td>
+	                                        <td>1st</td>
+	                                        <td>XXX</td>
+	                                        <td>二级库</td>
+	                                        <td>99-51</td>
+	                                        <td>盒</td>
+	                                        <td>100</td>
+	                                        <td>2018-06-06</td>
+	                                    </tr>
+	                                    <tr class="listTableText list_list">
+	                                        <td>CKD6350012</td>
+	                                        <td>5K电阻</td>
+	                                        <td>JGBY215254</td>
+	                                        <td>电阻</td>
+	                                        <td>DZ-50</td>
+	                                        <td>5K</td>
+	                                        <td>第一批</td>
+	                                        <td>XH2315001</td>
+	                                        <td>2018-05-29</td>
+	                                        <td>1st</td>
+	                                        <td>XXX</td>
+	                                        <td>二级库</td>
+	                                        <td>99-51</td>
+	                                        <td>盒</td>
+	                                        <td>100</td>
+	                                        <td>2018-06-06</td>
+	                                    </tr>
+	                                    <tr class="listTableText list_list">
+	                                        <td>CKD6350012</td>
+	                                        <td>5K电阻</td>
+	                                        <td>JGBY215254</td>
+	                                        <td>电阻</td>
+	                                        <td>DZ-50</td>
+	                                        <td>5K</td>
+	                                        <td>第一批</td>
+	                                        <td>XH2315001</td>
+	                                        <td>2018-05-29</td>
+	                                        <td>1st</td>
+	                                        <td>XXX</td>
+	                                        <td>二级库</td>
+	                                        <td>99-51</td>
+	                                        <td>盒</td>
+	                                        <td>100</td>
+	                                        <td>2018-06-06</td>
+	                                    </tr>
+	                                </tbody>
+	
+	                            </table>
+	                        </div>
+		                    <!-- 页码区域 -->
+		                    <div class="page_area contentText clear">
+		                    	<div class="page_sum">
+		                    		共<span class="page_number"> 3 </span>页&emsp;每页 10 条&emsp;共<span class="info_sum"> 27 </span>条记录
+		                    	</div>
+		                        <div class="page-pull-right async-page">
+		                            <button>首页</button>
+		                            <button>&lt;&lt;</button>
+		                            <button class="select_page">1</button>
+		                            <button>2</button>
+		                            <button>3</button>
+		                            <button>&gt;&gt;</button>
+		                            <button>尾页</button>
+		                        </div>
+		                    </div>
+	                    </div>
+	                </div>
+			</div>
+			<!-- 版尾  -->
+			<div class="ending">
+				Copyright© 2017-2018 西安磐基新能源科技有限公司
+			</div>
+		</div>
+	</body>
+	<script src="../../js/jquery-3.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../js/frame/common.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../js/jquery-ui.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		var h = document.documentElement.clientHeight;
+		$(".wrap").css("height", h);
+		
+		// 获取每行 td 的兄弟节点
+		$("td").hover(   
+			function () {      
+				$(this).parent().children().addClass("td_hover");   
+			},    
+			function () {      
+				$(this).parent().children().removeClass("td_hover");   
+			}
+		);
+		
+		// 日期控件
+		$(function(){
+	        $("#dateControl").datepicker({
+	        	dateFormat : 'yy-mm-dd',
+	            monthNamesShort:["January","February","March","April","May","June", "July","August","September","October","November","December"],
+	 		 	changeYear:true,
+	 		 	changeMonth:true,
+	 		 	showOn:"button",
+	 		 	buttonImage:"../../img/button/calendar.png",
+	 		 	buttonImageOnly:false
+	        });
+	     });
+	     $(function(){
+	        $("#dateControl1").datepicker({
+	        	dateFormat : 'yy-mm-dd',
+	            monthNamesShort:["January","February","March","April","May","June", "July","August","September","October","November","December"],
+	 		 	changeYear:true,
+	 		 	changeMonth:true,
+	 		 	showOn:"button",
+	 		 	buttonImage:"../../img/button/calendar.png",
+	 		 	buttonImageOnly:false
+	        });
+	     });
+	</script>
+</html>

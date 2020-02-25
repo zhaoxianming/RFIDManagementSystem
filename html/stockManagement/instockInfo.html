@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>入库单详情</title>
+		<link rel="stylesheet" type="text/css" href="../../css/style.css"/>
+		<link rel="stylesheet" type="text/css" href="../../css/form.css"/>
+	</head>
+	<body>
+		<!-- 蓝色背景区域 -->
+		<div class="wrap">
+			<!-- 白色可用区域 -->
+			<div class="canuse">
+				<!------ 位置 ------>
+	            <p class="contentText local"><span>位置：库存日常管理 > 入库管理 > 物料入库单详情</span></p>
+	            
+			    	<div class="article_list">
+			            <!------- 内容 ------->
+			            <div class="content content1" style="width: 99.6%;margin: 0px auto;">
+			            	<!-- 用户列表内容区 -->
+			                <div class="con con_01">
+			                    <!-- 表单信息填写区 -->
+			                    <h4 class="sel_title"><img src="../../img/list/brand1.png" /><span>二级库物料入库单</span></h4>
+			                    <div class="write_area">
+			                        <form id="addFrom" action="" method="post">
+			                            <table class="contentText" border="1" cellspacing="0" cellpadding="0" width="99%" style="margin-bottom: 10px;">
+			                                <tbody>
+			                                    <tr>
+			                                        <th>入库单号：</th>
+			                                        <td>RKDH20180828184353</td>
+			                                        <th>入库日期：</th>
+			                                        <td>2018-08-28</td>
+			                                        <th>制单人：</th>
+			                                        <td>小刘</td>
+			                                        <td class="twocode" rowspan="2" style="text-align:center;position:relative;">
+			                                        	<img src="../../img/list/twocode.png"/>
+			                                        	<div class="th_twocode_hover"><img src="../../img/list/twocode.png"/></div>
+			                                        </td>
+			                                    </tr>
+			                                    <tr>
+			                                        <th>申领人：</th>
+			                                        <td>小王</td>
+			                                        <th>申领部门：</th>
+			                                        <td>结构产品事业部</td>
+			                                        <th>申领单号：</th>
+			                                        <td>201800101</td>
+			                                    </tr>
+			                                </tbody>
+			                            </table>
+			                        </form>
+			                    </div>
+			                </div>
+							<!-- 列表展示区 -->
+							<div class="table_border">
+				                <div class="show_list">
+				                	<div class="title_operate">
+				                    	<h4 class="sel_title"><img src="../../img/list/brand1.png" /><span>二级库物料入库单详情</span></h4>
+				                		
+				                        <!-- 操作类型区 -->
+				                        <div class="operate_area">
+				                            <a href="printDocuments.html"target="_blank" class="bgd_blue_two img_hand">打印</a> 
+				                            <a href="instockList.html" class="bgd_white_two img_hand">返回</a> 
+				                        </div>
+				                	</div>
+				                	<div class="list_area">
+				                        <!-- 信息列表区 -->
+				                        <div class="info_area">
+				                            <table class="tablelist" border="1" cellspacing="0" cellpadding="0">
+				                                <tbody>
+				                                    <tr class="menuText list_head">
+				                                        <th class="">序号</th>
+				                                        <th class="">物料编码</th>
+				                                        <th class="">物料名称</th>
+				                                        <th class="">物料类型</th>
+				                                        <th class="">物料规格</th>
+				                                        <th class="">物料型号/牌号/材料</th>
+				                                        <th class="">入库数量</th>
+				                                        <th class="">单位</th>
+				                                        <th class="">批次号</th>
+				                                        <th class="">库存位置</th>
+				                                        <th class="">生产日期</th>
+				                                        <th class="">失效日期</th>
+				                                        <th class="">供应商</th>
+				                                        <th class="">二维码打印</th>
+				                                    </tr>
+				                                </tbody>
+				                                <tbody class="tablelist">
+				                                    <tr class="listTableText list_list">
+				                                        <td>1</td>
+				                                        <td>erpdz10010</td>
+				                                        <td>电阻1</td>
+				                                        <td>热敏电阻1</td>
+				                                        <td>GG0011</td>
+				                                        <td>XH0011</td>
+				                                        <td>150</td>
+				                                        <td>个</td>
+				                                        <td>PCB001</td>
+				                                        <td>sadad</td>
+				                                        <td>2018-05-21</td>
+				                                        <td>2020-05-20</td>
+				                                        <td>北京供应商</td>
+				                                        <td><img src="../../img/list/printer.png"/></td>
+				                                    </tr>
+				                                    
+				                                </tbody>
+				
+				                            </table>
+				                        </div>
+				                    </div>
+				                </div>
+							</div>
+			            </div>
+			        </div>
+			        
+			    </div>
+			</div>
+			
+			<!-- 版尾  -->
+			<div class="ending">
+				Copyright© 2017-2018 西安磐基新能源科技有限公司
+			</div>
+		</div>
+	</body>
+	<script src="../../js/jquery-3.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		var h = document.documentElement.clientHeight;
+		$(".wrap").css("height", h);
+		
+		// 获取每行 td 的兄弟节点
+		$(".info_area td").hover(   
+			function () {      
+				$(this).parent().children().addClass("td_hover");
+//				$(this).append("<div class='twocode_hover'></div>");
+				$(this).append("<div class='twocode_hover'><img src='../../img/list/twocode.png'/></div>");
+			},    
+			function () {      
+				$(this).parent().children().removeClass("td_hover");  
+				$(".twocode_hover").remove();
+			}
+		);
+		
+	</script>
+</html>
